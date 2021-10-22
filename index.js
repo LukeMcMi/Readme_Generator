@@ -2,7 +2,7 @@
 const fs = require("fs");
 const util = require("util");
 const inquirer = require("inquirer");
-const generteReadMe = require("./utils/generateMarkdown.jss")
+const generateReadMe = require("./utils/generateMarkdown.jss")
 const writeFileAsync = util.promisify(fs.writeFile);
 
 // TODO: Create an array of questions for user input
@@ -84,12 +84,25 @@ async function init() {
         // Prompt inquirer questions
         const userResponses = await inquirer.prompt(questions);
         console.log("Your responses: ", userResponses);
-        console.log("Thank's for your responses! Fetching your GitHub data...");
+        console.log("Thank's for your responses! Fetching your GitHub data....");
 
         // calling GitHub api for user data
         const userInfo = await fs.appendFile.getUser(userResponses);
         console.log("Your GitHub user information: ", userInfo);
+
+        // Pass user responses and info to generateMarkdown
+        console.log("Generating your README.....")
+        const markdown = generateReadMe(userResponses, userInfo);
+        console.log(markdown);
+
+        // write markdown to file
+        await writeFileAsync("ExampleREADME.md", markdown);
+
+    // Log error
+    } catch (error) {
+        console.log(error);
     }
+
 }
 
 // Function call to initialize app
