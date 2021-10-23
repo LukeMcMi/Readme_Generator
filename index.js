@@ -2,7 +2,8 @@
 const fs = require("fs");
 const util = require("util");
 const inquirer = require("inquirer");
-const generateReadMe = require("./utils/generateMarkdown.jss")
+const gitHubAPI = require("./utils/githubApiCall")
+const generateMarkdown = require("./utils/generateMarkdown.js")
 const writeFileAsync = util.promisify(fs.writeFile);
 
 // TODO: Create an array of questions for user input
@@ -87,12 +88,12 @@ async function init() {
         console.log("Thank's for your responses! Fetching your GitHub data....");
 
         // calling GitHub api for user data
-        const userInfo = await fs.appendFile.getUser(userResponses);
+        const userInfo = await gitHubAPI.getUser(userResponses);
         console.log("Your GitHub user information: ", userInfo);
 
         // Pass user responses and info to generateMarkdown
         console.log("Generating your README.....")
-        const markdown = generateReadMe(userResponses, userInfo);
+        const markdown = generateMarkdown(userResponses, userInfo);
         console.log(markdown);
 
         // write markdown to file
