@@ -2,9 +2,8 @@
 const fs = require("fs");
 const util = require("util");
 const inquirer = require("inquirer");
-const gitHubAPI = require("./utils/githubApiCall")
-const generateMarkdown = require("./utils/generateMarkdown.js")
-const writeFileAsync = util.promisify(fs.writeFile);
+const gitHubAPI = require("./assets/githubApiCall")
+const generateMarkdown = require("./assets/generateMarkdown.js")
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -74,9 +73,11 @@ function writeToFile(fileName, data) {
         if (err) {
             return console.log(err);
         }
-        console.log('✔️  Successfully wrote to README.md')
+        console.log('Successfully wrote to README.md')
     });
 }
+
+const writeFileAsync = util.promisify(writeToFile);
 
 
 // TODO: Create a function to initialize app
