@@ -14,6 +14,23 @@ function renderLicenseSection(license) {}
 function generateMarkdown(data) {
   return `# ${data.title}
 
+  ![badge](https://img.shields.io/badge/license-${userResponses.license}-brightgreen)<br />
+
+  ## Description
+  ${userResponses.description}
+
+  ## Table of Contents
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+
+## Installation
+${userResponses.usage}
+
 `;
 }
 
