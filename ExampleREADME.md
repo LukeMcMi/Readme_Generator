@@ -1,7 +1,9 @@
 # README Generator
+
+  ![badge](https://img.shields.io/badge/license-undefined-brightgreen)
   
   ## Description
-  Application to generate a professional README document.
+  Application to generate professional README document
   
   ## Table of Contents
   - [Description](#description)
@@ -13,10 +15,10 @@
   - [Questions](#questions)
   
   ## Installation
-  Run in terminal by using node index.js command
+  Run node index.js
   
   ## Usage
-  Generating a professional README document.
+  To generate README file
   
   ## License
   
@@ -25,16 +27,15 @@
   This application is covered under the undefined license.
 
   ## Contributing
-  Fork repository
+  Fork repor or contribute
 
   ## Tests
   no
 
   ## Questions
-  Contact me via GitHub or email<br />
-  <br />
-  Find me on GitHub: [lukemcmi](https://github.com/lukemcmi)<br />
-  <br />
-  Email me if you have any questions: mcmillan@ayasfa.com.au<br />
-  <br />
+  Contact via GitHub or email
+  
+  Find me on GitHub: [lukemcmi](https://github.com/lukemcmi)
+  
+  Email me if you have any questions: test@gmail.com
 
