@@ -1,6 +1,6 @@
 # README Generator
 
-  ![badge](https://img.shields.io/badge/license-undefined-brightgreen)
+  ![badge](https://img.shields.io/badge/license-MIT-brightgreen)
   
   ## Description
   Application to generate professional README document. 
@@ -29,7 +29,7 @@
 
   ## License
   
-  ![badge](https://img.shields.io/badge/license-undefined-brightgreen)
+  ![badge](https://img.shields.io/badge/license-MIT-brightgreen)
   <br />
   This application is covered under the undefined license.
 
