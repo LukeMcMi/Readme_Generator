@@ -10,6 +10,7 @@
   - [Installation](#installation)
   - [Usage](#usage)
   - [Recording](#recording)
+  - [Example](#example)
   - [License](#license)
   - [Tests](#tests)
   - [Questions](#questions)
@@ -22,6 +23,9 @@
   
   ## Recording
   [Video](https://drive.google.com/file/d/1nWAGua0f6GNowompyNXPDMoBe1MLaH7m/view?usp=sharing)
+
+  ## Example
+  [ExampleREADME.js](/ExampleREADME.md)
 
   ## License
   
