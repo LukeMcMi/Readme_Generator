@@ -1,7 +1,7 @@
-# undefined
+# README Generator
   
   ## Description
-  sd
+  Application to generate a professional README document.
   
   ## Table of Contents
   - [Description](#description)
@@ -13,10 +13,10 @@
   - [Questions](#questions)
   
   ## Installation
-  sd
+  Run in terminal by using node index.js command
   
   ## Usage
-  sd
+  Generating a professional README document.
   
   ## License
   
@@ -25,11 +25,16 @@
   This application is covered under the undefined license.
 
   ## Contributing
-  sd
+  Fork repository
 
   ## Tests
-  sd
+  no
 
-
-
+  ## Questions
+  Contact me via GitHub or email<br />
+  <br />
+  Find me on GitHub: [lukemcmi](https://github.com/lukemcmi)<br />
+  <br />
+  Email me if you have any questions: mcmillan@ayasfa.com.au<br />
+  <br />
 

@@ -44,8 +44,13 @@ function generateMarkdown(userResponses) {
   ## Tests
   ${userResponses.tests}
 
-
-
+  ## Questions
+  ${userResponses.questions}
+  
+  Find me on GitHub: [${userResponses.username}](https://github.com/${userResponses.username})
+  
+  Email me if you have any questions: ${userResponses.email}
+  
 
 `;
 }
